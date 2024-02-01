@@ -14,8 +14,12 @@ struct HabitsView: View {
         NavigationStack {
             List {
                 ForEach(habitsViewModel.habitsList.habits) { habit in
-                    VStack {
-                        Text("\(habit.name) - \(habit.frequency)")
+                    NavigationLink(value: habit) {
+                        HStack {
+                            Text("\(habit.name)")
+                            Spacer()
+                            Text("\(habit.frequency)")
+                        }
                     }
                 }
             }
@@ -23,6 +27,9 @@ struct HabitsView: View {
                 AddHabitView(viewModel: AddHabitViewModel(habitsList: habitsViewModel.habitsList))
             }
             .navigationTitle("Habits Tracker")
+            .navigationDestination(for: Habit.self) { habit in
+                HabitDetailsView(habit: habit)
+            }
             .toolbar {
                 ToolbarItem {
                     Button {
@@ -37,5 +44,5 @@ struct HabitsView: View {
 }
 
 #Preview {
-    HabitsView()
+    HabitsView(habitsViewModel: HabitsViewModel(habitsList: HabitsList(habits: [Habit.mockHabit])))
 }
