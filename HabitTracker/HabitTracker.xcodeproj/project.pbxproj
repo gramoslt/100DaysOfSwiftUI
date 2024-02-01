@@ -94,6 +94,8 @@
 		6ED7B5922B6C150C0004B205 /* HabitTracker */ = {
 			isa = PBXGroup;
 			children = (
+				6ED7B5BE2B6C15790004B205 /* Views */,
+				6ED7B5BD2B6C15710004B205 /* Models */,
 				6ED7B5932B6C150C0004B205 /* HabitTrackerApp.swift */,
 				6ED7B5952B6C150C0004B205 /* ContentView.swift */,
 				6ED7B5972B6C150E0004B205 /* Assets.xcassets */,
@@ -125,6 +127,20 @@
 				6ED7B5B02B6C150E0004B205 /* HabitTrackerUITestsLaunchTests.swift */,
 			);
 			path = HabitTrackerUITests;
+			sourceTree = "<group>";
+		};
+		6ED7B5BD2B6C15710004B205 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		6ED7B5BE2B6C15790004B205 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
