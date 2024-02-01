@@ -7,7 +7,15 @@
 
 import Foundation
 
-class Expenses: ObservableObject {
+class Expenses: ObservableObject, Hashable {
+    static func == (lhs: Expenses, rhs: Expenses) -> Bool {
+        lhs.items == rhs.items
+    }
+
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(items)
+    }
+
     @Published var items = [ExpenseItem]() {
         didSet {
             let encoder = JSONEncoder()
