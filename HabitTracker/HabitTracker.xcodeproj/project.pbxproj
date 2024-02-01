@@ -14,6 +14,7 @@
 		6ED7B5A52B6C150E0004B205 /* HabitTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5A42B6C150E0004B205 /* HabitTrackerTests.swift */; };
 		6ED7B5AF2B6C150E0004B205 /* HabitTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5AE2B6C150E0004B205 /* HabitTrackerUITests.swift */; };
 		6ED7B5B12B6C150E0004B205 /* HabitTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5B02B6C150E0004B205 /* HabitTrackerUITestsLaunchTests.swift */; };
+		6ED7B5C22B6C16300004B205 /* HabitsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5C12B6C16300004B205 /* HabitsList.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		6ED7B5AA2B6C150E0004B205 /* HabitTrackerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitTrackerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED7B5AE2B6C150E0004B205 /* HabitTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITests.swift; sourceTree = "<group>"; };
 		6ED7B5B02B6C150E0004B205 /* HabitTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		6ED7B5C12B6C16300004B205 /* HabitsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 		6ED7B5BD2B6C15710004B205 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				6ED7B5C12B6C16300004B205 /* HabitsList.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -275,6 +278,7 @@
 			files = (
 				6ED7B5962B6C150C0004B205 /* ContentView.swift in Sources */,
 				6ED7B5942B6C150C0004B205 /* HabitTrackerApp.swift in Sources */,
+				6ED7B5C22B6C16300004B205 /* HabitsList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
