@@ -20,13 +20,13 @@ struct HabitsView: View {
                 }
             }
             .sheet(isPresented: $habitsViewModel.isShowingSheet) {
-                AddHabitView()
+                AddHabitView(viewModel: AddHabitViewModel(habitsList: habitsViewModel.habitsList))
             }
             .navigationTitle("Habits Tracker")
             .toolbar {
                 ToolbarItem {
                     Button {
-                        habitsViewModel.isShowingSheet = true
+                        habitsViewModel.showSheet()
                     } label: {
                         Label("Add", systemImage: "plus.circle")
                     }

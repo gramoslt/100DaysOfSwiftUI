@@ -8,8 +8,10 @@
 import Foundation
 
 @MainActor class HabitsViewModel: ObservableObject {
-    var habitsList = HabitsList()
-    var isShowingSheet = false
+    @Published var habitsList: HabitsList = HabitsList()
+    @Published var isShowingSheet: Bool = false
 
-    
+    func showSheet() {
+        self.isShowingSheet = true
+    }
 }
