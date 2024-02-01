@@ -14,6 +14,10 @@ struct Habit: Identifiable, Hashable {
     var frequency: Int
 }
 
+extension Habit {
+    static let mockHabit = Habit(name: "Exercise", description: "go to the gym", frequency: 1)
+}
+
 class HabitsList: ObservableObject, Hashable {
     static func == (lhs: HabitsList, rhs: HabitsList) -> Bool {
         lhs.habits == rhs.habits
