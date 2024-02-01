@@ -10,6 +10,7 @@ import Foundation
 struct Habit: Identifiable, Hashable {
     let id: UUID = UUID()
     var name: String
+    var description: String
     var frequency: Int
 }
 
