@@ -17,6 +17,7 @@
 		6ED7B5C42B6C17BF0004B205 /* HabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5C32B6C17BF0004B205 /* HabitsView.swift */; };
 		6ED7B5C62B6C1BF90004B205 /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5C52B6C1BF90004B205 /* AddHabitView.swift */; };
 		6ED7B5C92B6C1C550004B205 /* HabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5C82B6C1C550004B205 /* HabitsViewModel.swift */; };
+		6ED7B5CC2B6C24A70004B205 /* AddHabitViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5CB2B6C24A70004B205 /* AddHabitViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		6ED7B5C32B6C17BF0004B205 /* HabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsView.swift; sourceTree = "<group>"; };
 		6ED7B5C52B6C1BF90004B205 /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
 		6ED7B5C82B6C1C550004B205 /* HabitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewModel.swift; sourceTree = "<group>"; };
+		6ED7B5CB2B6C24A70004B205 /* AddHabitViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,7 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				6ED7B5C72B6C1C3C0004B205 /* HabitsView */,
-				6ED7B5C52B6C1BF90004B205 /* AddHabitView.swift */,
+				6ED7B5CA2B6C248F0004B205 /* AddHabitView */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -158,6 +160,15 @@
 				6ED7B5C82B6C1C550004B205 /* HabitsViewModel.swift */,
 			);
 			path = HabitsView;
+			sourceTree = "<group>";
+		};
+		6ED7B5CA2B6C248F0004B205 /* AddHabitView */ = {
+			isa = PBXGroup;
+			children = (
+				6ED7B5C52B6C1BF90004B205 /* AddHabitView.swift */,
+				6ED7B5CB2B6C24A70004B205 /* AddHabitViewModel.swift */,
+			);
+			path = AddHabitView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -293,6 +304,7 @@
 				6ED7B5C92B6C1C550004B205 /* HabitsViewModel.swift in Sources */,
 				6ED7B5C42B6C17BF0004B205 /* HabitsView.swift in Sources */,
 				6ED7B5C62B6C1BF90004B205 /* AddHabitView.swift in Sources */,
+				6ED7B5CC2B6C24A70004B205 /* AddHabitViewModel.swift in Sources */,
 				6ED7B5942B6C150C0004B205 /* HabitTrackerApp.swift in Sources */,
 				6ED7B5C22B6C16300004B205 /* HabitsList.swift in Sources */,
 			);
