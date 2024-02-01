@@ -8,13 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		6ED7B5942B6C150C0004B205 /* HabitTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5932B6C150C0004B205 /* HabitTrackerApp.swift */; };
-		6ED7B5962B6C150C0004B205 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5952B6C150C0004B205 /* ContentView.swift */; };
 		6ED7B5982B6C150E0004B205 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED7B5972B6C150E0004B205 /* Assets.xcassets */; };
 		6ED7B59B2B6C150E0004B205 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6ED7B59A2B6C150E0004B205 /* Preview Assets.xcassets */; };
 		6ED7B5A52B6C150E0004B205 /* HabitTrackerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5A42B6C150E0004B205 /* HabitTrackerTests.swift */; };
 		6ED7B5AF2B6C150E0004B205 /* HabitTrackerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5AE2B6C150E0004B205 /* HabitTrackerUITests.swift */; };
 		6ED7B5B12B6C150E0004B205 /* HabitTrackerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5B02B6C150E0004B205 /* HabitTrackerUITestsLaunchTests.swift */; };
 		6ED7B5C22B6C16300004B205 /* HabitsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5C12B6C16300004B205 /* HabitsList.swift */; };
+		6ED7B5C42B6C17BF0004B205 /* HabitsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5C32B6C17BF0004B205 /* HabitsView.swift */; };
+		6ED7B5C62B6C1BF90004B205 /* AddHabitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5C52B6C1BF90004B205 /* AddHabitView.swift */; };
+		6ED7B5C92B6C1C550004B205 /* HabitsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6ED7B5C82B6C1C550004B205 /* HabitsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,7 +39,6 @@
 /* Begin PBXFileReference section */
 		6ED7B5902B6C150C0004B205 /* HabitTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HabitTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ED7B5932B6C150C0004B205 /* HabitTrackerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerApp.swift; sourceTree = "<group>"; };
-		6ED7B5952B6C150C0004B205 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		6ED7B5972B6C150E0004B205 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6ED7B59A2B6C150E0004B205 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		6ED7B5A02B6C150E0004B205 /* HabitTrackerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HabitTrackerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +47,9 @@
 		6ED7B5AE2B6C150E0004B205 /* HabitTrackerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITests.swift; sourceTree = "<group>"; };
 		6ED7B5B02B6C150E0004B205 /* HabitTrackerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrackerUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		6ED7B5C12B6C16300004B205 /* HabitsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsList.swift; sourceTree = "<group>"; };
+		6ED7B5C32B6C17BF0004B205 /* HabitsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsView.swift; sourceTree = "<group>"; };
+		6ED7B5C52B6C1BF90004B205 /* AddHabitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddHabitView.swift; sourceTree = "<group>"; };
+		6ED7B5C82B6C1C550004B205 /* HabitsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +103,6 @@
 				6ED7B5BE2B6C15790004B205 /* Views */,
 				6ED7B5BD2B6C15710004B205 /* Models */,
 				6ED7B5932B6C150C0004B205 /* HabitTrackerApp.swift */,
-				6ED7B5952B6C150C0004B205 /* ContentView.swift */,
 				6ED7B5972B6C150E0004B205 /* Assets.xcassets */,
 				6ED7B5992B6C150E0004B205 /* Preview Content */,
 			);
@@ -142,8 +145,19 @@
 		6ED7B5BE2B6C15790004B205 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				6ED7B5C72B6C1C3C0004B205 /* HabitsView */,
+				6ED7B5C52B6C1BF90004B205 /* AddHabitView.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		6ED7B5C72B6C1C3C0004B205 /* HabitsView */ = {
+			isa = PBXGroup;
+			children = (
+				6ED7B5C32B6C17BF0004B205 /* HabitsView.swift */,
+				6ED7B5C82B6C1C550004B205 /* HabitsViewModel.swift */,
+			);
+			path = HabitsView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -276,7 +290,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6ED7B5962B6C150C0004B205 /* ContentView.swift in Sources */,
+				6ED7B5C92B6C1C550004B205 /* HabitsViewModel.swift in Sources */,
+				6ED7B5C42B6C17BF0004B205 /* HabitsView.swift in Sources */,
+				6ED7B5C62B6C1BF90004B205 /* AddHabitView.swift in Sources */,
 				6ED7B5942B6C150C0004B205 /* HabitTrackerApp.swift in Sources */,
 				6ED7B5C22B6C16300004B205 /* HabitsList.swift in Sources */,
 			);
