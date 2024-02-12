@@ -28,7 +28,11 @@ struct HabitsView: View {
             }
             .navigationTitle("Habits Tracker")
             .navigationDestination(for: Habit.self) { habit in
-                HabitDetailsView(habit: habit)
+                HabitDetailsView(
+                    viewModel: HabitDetailsViewModel(
+                        habitsList: habitsViewModel.habitsList,
+                        habit: habit)
+                )
             }
             .toolbar {
                 ToolbarItem {
