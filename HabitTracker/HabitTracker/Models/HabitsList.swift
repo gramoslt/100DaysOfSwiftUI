@@ -23,10 +23,24 @@ extension Habit {
 }
 
 class HabitsList: ObservableObject, Hashable {
-    var habits: [Habit]
+    @Published var habits = [Habit]() {
+        didSet {
+            let encoder = JSONEncoder()
 
-    init(habits: [Habit] = [Habit]()) {
-        self.habits = habits
+            if let encoded = try? encoder.encode(habits){
+                UserDefaults.standard.set(encoded, forKey: "habits")
+            }
+        }
+    }
+
+    init() {
+        if let savedItems = UserDefaults.standard.data(forKey: "habits"){
+            if let decodedItems = try? JSONDecoder().decode([Habit].self, from: savedItems){
+                habits = decodedItems
+                return
+            }
+        }
+        habits = []
     }
 
     static func == (lhs: HabitsList, rhs: HabitsList) -> Bool {

@@ -48,5 +48,5 @@ struct HabitsView: View {
 }
 
 #Preview {
-    HabitsView(habitsViewModel: HabitsViewModel(habitsList: HabitsList(habits: [Habit.mockHabit])))
+    HabitsView(habitsViewModel: HabitsViewModel(habitsList: HabitsList()))
 }
